@@ -22,15 +22,7 @@
     },
     "sku": {
       "type": "string",
-      "defaultValue": "pergb2018",
-      "allowedValues": [
-        "pergb2018",
-        "Free",
-        "Standalone",
-        "PerNode",
-        "Standard",
-        "Premium"
-      ],
+      "defaultValue": "pergb2021",
       "metadata": {
         "description": "Pricing tier: perGB2018 or legacy tiers (Free, Standalone, PerNode, Standard or Premium), which are not available to all customers."
       }

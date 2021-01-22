@@ -179,19 +179,6 @@
           }
         }
       ]
-    },
-    {
-      "type": "Microsoft.OperationalInsights/workspaces/linkedServices",
-      "apiVersion": "2020-08-01",
-      "name": "[concat(parameters('workspaceName'), '/' , 'Automation')]",
-      "location": "[parameters('location')]",
-      "dependsOn": [
-        "[parameters('workspaceName')]",
-        "[parameters('automationAccountName')]"
-      ],
-      "properties": {
-        "resourceId": "[resourceId('Microsoft.Automation/automationAccounts', parameters('automationAccountName'))]"
-      }
     }
   ]
 }

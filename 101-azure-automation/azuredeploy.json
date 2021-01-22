@@ -2,6 +2,18 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
+    "automationAccountName": {
+      "type": "string",
+      "metadata": {
+        "description": "Automation account name"
+      }
+    },
+    "automationAccountLocation": {
+      "type": "string",
+      "metadata": {
+        "description": "Specifies the location in which to create the Automation account."
+      }
+    },
     "workspaceName": {
       "type": "string",
       "metadata": {
@@ -37,18 +49,6 @@
       "defaultValue": "[resourceGroup().location]",
       "metadata": {
         "description": "Specifies the location in which to create the workspace."
-      }
-    },
-    "automationAccountName": {
-      "type": "string",
-      "metadata": {
-        "description": "Automation account name"
-      }
-    },
-    "automationAccountLocation": {
-      "type": "string",
-      "metadata": {
-        "description": "Specifies the location in which to create the Automation account."
       }
     }
   },
